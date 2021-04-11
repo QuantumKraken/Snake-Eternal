@@ -1,0 +1,113 @@
+Changes:
+  3/8/2020 8:40pm
+    - Changed direction numbers (0 Up, 2 Down, 1 Left, 3 Right)
+  3/8/2020 8:59pm
+    - Changed Food matrix number from 8 to 1
+    - Changed player numbers to 2-9 (8 Players)
+  3/8/2020 9:25pm
+    - Added Starting positions for players 1-4
+  3/8/2020 9:38pm
+    - Working on "Head[]", saving last stable
+    - Incremented version number to 0.04
+  3/8/2020 9:50pm
+    - Changed snakes from uint8 to uint32:
+      Intended to be uint32 because it is more efficient.
+      Snakes would break after 4 links with int type mismatch.
+      Tests snakes of length 16 when user input is added.
+  3/8/2020 10:14pm
+    - Updated Comments
+    - Incremented version number to 0.05
+  3/12/2020 7:00pm
+    - Added multiplayer directional support
+    - Replaced delay with timer
+    - Restricted snake direction changes to only perpendicular directions
+    - Added joystick functionality
+    - Incremented version number to 0.06
+  3/21/2020 1:30pm
+    - Added Adafruit ST7789 LCD display support
+      Commented out "#include "pins_arduino" in Adafruit_ST77xx.cpp
+      Doubles the refresh speed by removing displayMatrix from serial output
+    - Added in-game display scaling factor (4x4)
+    - Invert y-coordinate controller reading
+    - Increased dead zone from radial 300 to 490
+    - Added setPixel method to set color of xy-coordinate
+    - Incremented version number to 0.07
+  3/21/2020 5:00pm
+    - Updated scaling factor to 8x8
+    - Decreased dead zone from radial 490 to 400
+    - Incremented version to Beta number 0.01
+  3/22/2020 2:30am
+    - Added game-over screen
+    - Fix bug where tail is not moved with snake
+    - Update coordinate axes by rotating screen
+    - Add program title block
+    - Temporary disable multiplayer to prepare for OOP
+  3/22/2020 2:00pm
+    - Fix bug where food generates on snake
+    - Incremented version number to 0.02
+  3/24/2020 8:00pm
+    - Created Class Snake
+    - Moved function SnakeMove to class Snake
+    - Added class function SetDir to Snake
+    - Moved variables dir and renamed variables dir, segments, snakeLength, and ends to class variables
+    - The snake segment array is now dynamically generated when a snake object is constructed
+    - Snake objects are dynamically generated and accessed with pointers
+    - The snake color can now be changed
+    - Incremented version number to 0.03
+  3/25/2020 11:20pm
+    - Minor bug fixes
+    - Updated device pin comments
+    - Incremented version number to 0.04
+  3/27/2020 11:50am
+    - Added class function SnakeCheck
+    - Fixed bug where snakes always start moving in the up direction due to class function SnakeMove
+    - Identified bug where snakes always start moving in the up direction due to function controller
+    - Moved game end conditions to void loop from SnakeCheck (previously in SnakeMove)
+    - Fixed snake constructor to properly place snakes for any of the 4 initial directions
+    - Added class declaration to create global Snake pointer variable snakePtrs[4]
+    - Added class function Turn2Food to convert half of a dead snake into food pellets
+  3/27/2020 7:15pm
+    - Moved drawing the head pixel to SnakeCheck to fix snake overlapping obstacle upon death bug
+    - Added the tie, player# wins, and Game-Over screens
+  3/29/2020 11:55pm
+    - Incremented version number to 0.05
+    - Added function declarations
+    - Moved functions to bottom of program
+    - Added small 24 pixel border to top and bottom of display for scores
+    - Added preprocessor define "ROT" and setup screen rotation adjustments
+    - Adjusted the range of scale values down to 1,2,4,8, and 16
+    - Removed Snake Class functions ReturnHeadX and ReturnHeadY
+    - Added Snake Class member "index"
+    - Added Snake Class Function "PrintScore"
+  4/09/2020 12:30am
+    - Incremented version number to 0.06
+    - Added spiE.h library
+    - Replaced SPI.h with spiE.h library to all screen libraries.
+    - Changed from software SPI to hardware SPI
+    - Added PUSH2 interrupt
+    - Added pause screen and function
+    - Changed joystick pin defines to constant array
+    - Added score to game over screens
+  4/14/2020 5:30pm
+    - Edited ST7789.cpp - Added rotation(4) to flip display for presentation
+  4/14/2020 6:30pm
+    - Had code review with Professor Enz
+    - Suggested to add Enums
+  4/15/2020 6:30pm
+    - Updated comments
+    - Rearranged class function SnakeMove
+    - Removed variables Head[2], and grew
+    - Removed commented-out code
+    - Merged overloaded controller functons; updated snake move for modified controller function
+    - Added Enumerations
+    - Added Rotation/Mirroring controls. Editted ST7789.cpp library again.
+  4/16/2020 7:30pm
+    - incremented version number to 0.07
+    - Further added enumerations
+    - Implemented playAgain()
+  4/17/2020 1:30pm
+    - Made all menu screens clear faster by just clearing the pixels of menu elements instead of using tft.fillScreen()
+    - Added visual elements of playAgain()
+    - Reformatted all menu screens to work in vertical or horizontal mode.
+    - Added comments
+    
