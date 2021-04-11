@@ -54,8 +54,8 @@ Once installed, go to:
 Tools -> Board:  
 and select " LaunchPad (Tiva C) w/ tm4c123 (80MHz)"
 #### Libraries
-The required libraries are available in the libraries/ directory.  
-Place all files in libraries/ into \Documents\Energia\libraries on your local computer, or wherever your Energia library folder is.  
+The required libraries are available in the [libraries/](libraries) directory.  
+Place all files in [libraries/](libraries) into \Documents\Energia\libraries on your local computer, or wherever your Energia library folder is.  
 
 The AdaFruit_GFX_Library and the Adafruit_ST7735_and_ST7789_Library were modified to work with the Tiva C, and the spiE-TIVAC-SPI library is no longer available from its original location. (Credit to AdaFruit for the AdaFruit_GFX_Library and AdaFruit_GFX_Library AdaFruit_GFX_Library libraries; and to https://github.com/Paul47 for spiE-TIVAC-SPI)
 
