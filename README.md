@@ -10,8 +10,8 @@ For a multiplayer game, the goal of the game is the same, however with the added
 
 # Putting It Together
 ### Bill of Materials
-* 1 - Tiva C EK-TM4C123GXl (https://www.digikey.com/reference-designs/en/open-source-mcu-platforms/2554?utm_adgroup=xGeneral&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_Product&utm_term=&utm_content=xGeneral&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2QeFPy7R3bFkXMDxtO4tFqAgARe4f10my_QNgzrPlGeBeSdb-ExWlZ8aAnEvEALw_wcB)
-* 4 - 2-axis Analog Thumb Joysticks (https://www.adafruit.com/product/512?gclid=Cj0KCQjwmcWDBhCOARIsALgJ2QdTtyHgDw4a-RWpFLWy5ZlMLKZVwrNl4ITmCVAIiMSWxRMarkZ_VQIaAqYtEALw_wcB)
+* 1 - Tiva C EK-TM4C123GXl (https://www.digikey.com/reference-designs/en/open-source-mcu-platforms/2554)
+* 4 - 2-axis Analog Thumb Joysticks (https://www.adafruit.com/product/512)
 * 1 - 320x240 ST7789 Display (https://www.adafruit.com/product/4311)
 
 Other microcontrollers, joysticks, and SPI screens can be substituted, but compatiblity is no guaranteed. 
