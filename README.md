@@ -1,11 +1,11 @@
 # Snake-Eternal
-Multiplayer Snake game for the LaunchPad Tiva C EK-TM4C123GXL microcontroller with an Adafruit 320x240 pixel ST7789 display. This project was created for the Mech 405 class as Washington State University in 2020.  
+Multiplayer Snake game for the LaunchPad Tiva C EK-TM4C123GXL microcontroller with an Adafruit 320x240 pixel ST7789 display. This project was created for the Mech 405 class at Washington State University in 2020.
 
 ![MainImage](/images/MainImage.png)
 
 # The Game
 This is a 1-4 player version of the game snake. Player 1 may select the number of players and the game board size using their joystick and button0 on the microcontroller.  
-For a single player game, the goal of the game is to eat yellow food pellets and avoid the walls and yourself. If the player reaches the size of the game board, they win the game.  
+For a single-player game, the goal of the game is to eat yellow food pellets and avoid the walls and yourself. If the player reaches the size of the game board, they win the game.
 For a multiplayer game, the goal of the game is the same, however with the added obstacle of other players. The last player remaining on the board, wins.
 
 # Putting It Together
@@ -14,7 +14,7 @@ For a multiplayer game, the goal of the game is the same, however with the added
 * 4 - 2-axis Analog Thumb Joysticks (https://www.adafruit.com/product/512)
 * 1 - 320x240 ST7789 Display (https://www.adafruit.com/product/4311)
 
-Other microcontrollers, joysticks, and SPI screens can be substituted, but compatiblity is no guaranteed. 
+Other microcontrollers, joysticks, and SPI screens can be substituted, but compatibility is not guaranteed.
 
 ### Wiring
 
@@ -32,7 +32,7 @@ HostPin (Alt Name) -> ScreenPin
 23 (PD_0) -> BL  
 
 #### Joysticks
-The each joystick has two input pins, one for the X direction and one for th Y direction.
+Each joystick has two input pins, one for the X direction and one for the Y direction.
 There are 4 joysticks total.   
 
 {HostPinX, HostPinY} -> Joystick #  
@@ -43,7 +43,7 @@ There are 4 joysticks total.
 
 ### Programming
 #### IDE
-The Tiva C microcontroller can be programmed using Energia, a free Integrated Developement Environment for the board.  
+The Tiva C microcontroller can be programmed using Energia, a free Integrated Development Environment for the board.
   
 Energia can be downloaded here: https://energia.nu/download/  
 Once Energia is installed, go to:  
@@ -52,12 +52,12 @@ and install Energia Tiva boards from the list.
   
 Once installed, go to:
 Tools -> Board:  
-and select " LaunchPad (Tiva C) w/ tm4c123 (80MHz)"  
+and select "LaunchPad (Tiva C) w/ tm4c123 (80MHz)"
 
 This project was later programmed in Visual Studio, however it is not required for this project.
 #### Libraries
 The required libraries are available in the [libraries/](libraries) directory.  
-Place all files in [libraries/](libraries) into \Documents\Energia\libraries on your local computer, or wherever your Energia library folder is.  
+Place all files in [libraries/](libraries) into `~\Documents\Energia\libraries` on your local computer, or wherever your Energia library folder is.
 
 The AdaFruit_GFX_Library and the Adafruit_ST7735_and_ST7789_Library were modified to work with the Tiva C, and the spiE-TIVAC-SPI library is no longer available from its original location. (Credit to AdaFruit for the AdaFruit_GFX_Library and AdaFruit_GFX_Library AdaFruit_GFX_Library libraries; and to https://github.com/Paul47 for spiE-TIVAC-SPI)
 
@@ -68,10 +68,10 @@ and select the port your microcontroller is plugged into.
 Then click "upload".  
 Some troubleshooting may be required.  
   
-The source code from Visual Studio can be found in source. [source/](source) 
+The source code from Visual Studio can be found in the [source/](source) directory.
 
 # License
-Copyright 2020 Zachariah Weber, Alixander Richards-Thompson, Clayton Walhstrom
+Copyright 2020 Zachariah Weber, Alixander Richards-Thompson, Clayton Wahlstrom
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
