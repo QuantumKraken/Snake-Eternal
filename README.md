@@ -1,7 +1,7 @@
 # Snake-Eternal
 Multiplayer Snake game for the LaunchPad Tiva C EK-TM4C123GXL microcontroller with an Adafruit 320x240 pixel ST7789 display. This project was created for the Mech 405 class as Washington State University in 2020.  
-  
-{Image}
+
+![MainImage](/images/MainImage.png)
 
 # The Game
 This is a 1-4 player version of the game snake. Player 1 may select the number of players and the game board size using their joystick and button0 on the microcontroller.  
@@ -18,7 +18,7 @@ Other microcontrollers, joysticks, and SPI screens can be substituted, but compa
 
 ### Wiring
 
-{Wire Diagram}  
+![Wire Diagram](/images/WireDiagram.jpg)  
 (Wire Diagram, including 4 joysticks.)  
 Using the parts suggested in "Bill of materials", the wiring is as follows:
 #### TFT Display
