@@ -52,7 +52,9 @@ and install Energia Tiva boards from the list.
   
 Once installed, go to:
 Tools -> Board:  
-and select " LaunchPad (Tiva C) w/ tm4c123 (80MHz)"
+and select " LaunchPad (Tiva C) w/ tm4c123 (80MHz)"  
+
+This project was later programmed in Visual Studio, however it is not required for this project.
 #### Libraries
 The required libraries are available in the [libraries/](libraries) directory.  
 Place all files in [libraries/](libraries) into \Documents\Energia\libraries on your local computer, or wherever your Energia library folder is.  
@@ -60,7 +62,13 @@ Place all files in [libraries/](libraries) into \Documents\Energia\libraries on 
 The AdaFruit_GFX_Library and the Adafruit_ST7735_and_ST7789_Library were modified to work with the Tiva C, and the spiE-TIVAC-SPI library is no longer available from its original location. (Credit to AdaFruit for the AdaFruit_GFX_Library and AdaFruit_GFX_Library AdaFruit_GFX_Library libraries; and to https://github.com/Paul47 for spiE-TIVAC-SPI)
 
 #### Installing the Program
-
+To install the program, download [source/SnakeGame_Beta_0.07_4-16-2020.ino](source/SnakeGame_Beta_0.07_4-16-2020.ino) and open it with Energia. Connect the Tiva C via USB to your computer. Once connected, go to:   
+tools -> Port  
+and select the port your microcontroller is plugged into.  
+Then click "upload".  
+Some troubleshooting may be required.  
+  
+The source code from Visual Studio can be found in source. [source/](source) 
 
 # License
 Copyright 2020 Zachariah Weber, Alixander Richards-Thompson, Clayton Walhstrom
